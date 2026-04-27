@@ -8,19 +8,19 @@ export const metadata: Metadata = {
 };
 
 const features = [
-  { icon: "📋", title: "Triagem de editais", desc: "IA analisa editais automaticamente e filtra apenas as licitações que fazem sentido para o seu perfil." },
-  { icon: "💰", title: "Precificação assistida", desc: "Sugestão de preço de proposta com base em histórico, BDI e margem configurável por categoria." },
-  { icon: "📦", title: "Gestão de cotações", desc: "Colete cotações de fornecedores, compare preços e monte propostas com um clique." },
-  { icon: "📄", title: "Gestão de contratos", desc: "Do aceite da proposta ao encerramento do contrato, com alertas de prazo e obrigações." },
-  { icon: "🔔", title: "Alertas em tempo real", desc: "Notificações por WhatsApp e e-mail sobre novos editais, prazos e eventos críticos." },
-  { icon: "📊", title: "Dashboard analítico", desc: "Acompanhe win rate, receita, portais mais lucrativos e desempenho da equipe em tempo real." },
+  { icon: "🔐", title: "OAuth Gov.br", desc: "Autenticação oficial do governo brasileiro integrada para acesso seguro aos pregões eletrônicos." },
+  { icon: "🤖", title: "Lance automático", desc: "Engine inteligente de lances que monitora pregões em tempo real e executa estratégias configuradas." },
+  { icon: "⚡", title: "Tempo real", desc: "Monitora múltiplos pregões simultaneamente e reage instantaneamente a mudanças de status e lances." },
+  { icon: "🎯", title: "Estratégias inteligentes", desc: "Configure regras de lance: valores mínimos, máximos, decrementos e condições de disputa." },
+  { icon: "🔔", title: "Notificações", desc: "Alertas instantâneos sobre eventos críticos: início, lance derrotado, vitória e fechamento." },
+  { icon: "📊", title: "Dashboard analítico", desc: "Acompanhe histórico de participações, win rate e performance das estratégias de lance." },
 ];
 
 const roadmap = [
-  { fase: "Fase 0", status: "Concluído", title: "Base de conhecimento", desc: "Modelagem de dados, regras de negócio, módulos e arquitetura técnica definidos." },
-  { fase: "Fase 1", status: "Em andamento", title: "Scaffold e MVP", desc: "Infraestrutura base (Laravel + React + Docker), autenticação, módulo de editais e cotações." },
-  { fase: "Fase 2", status: "Planejado", title: "Integrações de portais", desc: "Integração com BLL, BNC, PCP, BBMNET, Licitanet e demais portais de licitação." },
-  { fase: "Fase 3", status: "Planejado", title: "IA e automação avançada", desc: "Análise semântica de editais, sugestão automática de preço e alertas proativos por perfil." },
+  { fase: "Fase 0", status: "Concluído", title: "Descoberta e arquitetura", desc: "Arquitetura OAuth Gov.br, ComprasNet API, engine de lance e banco de dados definidos." },
+  { fase: "Fase 1", status: "Em andamento", title: "MVP e credenciais", desc: "Landing page, infraestrutura Vercel, solicitação de credenciais OAuth Gov.br em andamento." },
+  { fase: "Fase 2", status: "Planejado", title: "Engine de lance", desc: "Implementação do monitor de pregões, executor de lances e estratégias de precificação." },
+  { fase: "Fase 3", status: "Planejado", title: "Dashboard e escalabilidade", desc: "Interface de gerenciamento, analytics de performance e suporte a múltiplos usuários simultâneos." },
 ];
 
 export default function SolucoesPage() {
@@ -36,7 +36,7 @@ export default function SolucoesPage() {
             Além de sistemas sob medida, desenvolvemos produtos SaaS voltados para segmentos estratégicos do mercado brasileiro.
           </p>
 
-          {/* Licita-Já — produto principal */}
+          {/* LanceFlow — produto principal */}
           <div className="relative bg-bg2 border border-white/[0.11] rounded-2xl overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold to-gold2" />
             <div className="p-8 lg:p-12">
@@ -45,12 +45,12 @@ export default function SolucoesPage() {
                   <span className="text-[11px] font-bold uppercase tracking-wide px-3 py-1 rounded-full inline-block mb-5 text-gold2 bg-gold/10">
                     SaaS · Em desenvolvimento
                   </span>
-                  <h2 className="text-3xl font-extrabold tracking-tight mb-4">Licita-Já</h2>
+                  <h2 className="text-3xl font-extrabold tracking-tight mb-4">LanceFlow</h2>
                   <p className="text-[#8c93ad] leading-[1.8] mb-6">
-                    Plataforma SaaS completa para empresas e MEIs que participam de licitações públicas no Brasil. Do radar de editais à assinatura do contrato, o Licita-Já automatiza e inteligência todo o processo licitatório.
+                    Lance inteligente, vitória automática. Plataforma de automação de lances para pregões eletrônicos do ComprasNet, a plataforma oficial do governo federal brasileiro para licitações.
                   </p>
                   <p className="text-[#8c93ad] leading-[1.8] mb-8">
-                    Com módulos de análise de IA, gestão de cotações e fornecedores, máquina de lances e kanban de participações, o sistema centraliza tudo que uma empresa precisa para licitar com eficiência.
+                    Com autenticação oficial Gov.br, engine de lance automático em tempo real, estratégias inteligentes de precificação e monitoramento simultâneo de múltiplos pregões, o LanceFlow maximiza as chances de vitória em disputas eletrônicas.
                   </p>
                   <div className="flex gap-4 flex-wrap">
                     <Link href="/contato" className="inline-flex items-center gap-2 bg-gold text-bg px-6 py-3 rounded-full text-sm font-bold hover:bg-gold2 transition-all">
@@ -108,7 +108,7 @@ export default function SolucoesPage() {
           <span className="text-[11px] font-bold uppercase tracking-[2.5px] text-gold block mb-3">Soluções customizadas</span>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold tracking-tight leading-[1.05] mb-6">Seu segmento pode ser o próximo</h2>
           <p className="text-[#8c93ad] text-lg leading-[1.8] max-w-2xl mb-10">
-            Além do Licita-Já, desenvolvemos soluções SaaS customizadas para outros segmentos. Se você tem um problema de mercado e precisa de um produto tecnológico para resolvê-lo, vamos conversar.
+            Além do LanceFlow, desenvolvemos soluções SaaS customizadas para outros segmentos. Se você tem um problema de mercado e precisa de um produto tecnológico para resolvê-lo, vamos conversar.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
             {[

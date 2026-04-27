@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 const cases = [
   {
     tag: "SaaS · Em desenvolvimento", color: "text-gold2 bg-gold/10", accent: "from-gold to-gold2",
-    title: "Sistema de Gestão de Licitações",
-    desc: "Plataforma completa para empresas que participam de processos licitatórios. Triagem inteligente de editais por critérios de interesse, gestão de cotações com fornecedores, precificação assistida por IA e acompanhamento de propostas do início ao contrato.",
-    stack: ["Laravel 11", "React 18", "PostgreSQL", "Redis", "Go"],
-    metrics: [{ n: "100%", l: "Processo automatizado" }, { n: "Multi", l: "Canais integrados" }, { n: "IA", l: "Análise de editais" }],
+    title: "LanceFlow",
+    desc: "Lance inteligente, vitória automática. Plataforma de automação de lances para pregões eletrônicos do ComprasNet com autenticação oficial Gov.br, engine de lance automático em tempo real e estratégias inteligentes de precificação.",
+    stack: ["Next.js 16", "React 19", "TypeScript", "OAuth Gov.br", "Vercel Edge"],
+    metrics: [{ n: "100%", l: "Automatizado" }, { n: "OAuth", l: "Gov.br" }, { n: "Real-time", l: "Lance automático" }],
   },
   {
     tag: "Sistema · Web", color: "text-blue-300 bg-blue-500/10", accent: "from-blue-400 to-cyan-400",

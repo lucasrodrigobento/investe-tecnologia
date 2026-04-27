@@ -11,6 +11,15 @@
 - [ ] Confirmar "Valid Configuration" no painel da Vercel
 - [ ] Verificar HTTPS automático ativo
 
+## LanceFlow — subdomínios (para deploy em Vercel)
+
+- [ ] Adicionar CNAME `staging-lanceflow` → `cname.vercel-dns.com` no cPanel HostGator
+- [ ] Adicionar CNAME `lanceflow` → `cname.vercel-dns.com` no cPanel HostGator
+- [ ] Aguardar propagação DNS (5-30 minutos)
+- [ ] Criar projeto `lanceflow-staging` no Vercel com domínio `staging-lanceflow.investetecnologia.com.br`
+- [ ] Criar projeto `lanceflow-production` no Vercel com domínio `lanceflow.investetecnologia.com.br`
+- [ ] Configurar email `lanceflow@investetecnologia.com.br` após setup do Google Workspace
+
 ---
 
 ## E-mail corporativo — Google Workspace (recomendado)

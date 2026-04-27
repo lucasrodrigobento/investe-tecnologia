@@ -17,9 +17,9 @@ const services = [
 const cases = [
   {
     tag: "SaaS · Em desenvolvimento", color: "text-gold2 bg-gold/10",
-    title: "Sistema de Gestão de Licitações",
-    desc: "Plataforma completa para empresas que participam de processos licitatórios: triagem de editais, cotações, propostas e contratos.",
-    metrics: [{ n: "100%", l: "Automatizado" }, { n: "Multi", l: "Canais" }],
+    title: "LanceFlow",
+    desc: "Lance inteligente, vitória automática. Plataforma de automação de lances para pregões eletrônicos com autenticação Gov.br e engine de lance automático.",
+    metrics: [{ n: "100%", l: "Automatizado" }, { n: "OAuth", l: "Gov.br" }],
   },
   {
     tag: "Sistema · Web", color: "text-blue-300 bg-blue-500/10",
