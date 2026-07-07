@@ -1,6 +1,7 @@
-# TODO — Investe Tecnologia (Produção)
+# TODO — Investe Tecnologia
 
-> Checklist para quando o domínio `investetecnologia.com.br` estiver configurado.
+> Itens específicos do projeto Investe Tecnologia (site + infra).
+> Status: `[ ]` aberto · `[~]` bloqueado · `[x]` feito
 
 ---
 
@@ -11,18 +12,19 @@
 - [ ] Confirmar "Valid Configuration" no painel da Vercel
 - [ ] Verificar HTTPS automático ativo
 
+---
+
 ## LanceFlow — subdomínios (para deploy em Vercel)
 
 - [ ] Adicionar CNAME `staging-lanceflow` → `cname.vercel-dns.com` no cPanel HostGator
 - [ ] Adicionar CNAME `lanceflow` → `cname.vercel-dns.com` no cPanel HostGator
-- [ ] Aguardar propagação DNS (5-30 minutos)
 - [ ] Criar projeto `lanceflow-staging` no Vercel com domínio `staging-lanceflow.investetecnologia.com.br`
 - [ ] Criar projeto `lanceflow-production` no Vercel com domínio `lanceflow.investetecnologia.com.br`
 - [ ] Configurar email `lanceflow@investetecnologia.com.br` após setup do Google Workspace
 
 ---
 
-## E-mail corporativo — Google Workspace (recomendado)
+## E-mail corporativo — Google Workspace
 
 - [ ] Criar conta em workspace.google.com com domínio `investetecnologia.com.br` (~R$34/usuário/mês)
 - [ ] Adicionar registros MX e TXT do Google no cPanel do HostGator
@@ -36,10 +38,7 @@
 - [ ] Acessar resend.com → Domains → Add Domain → `investetecnologia.com.br`
 - [ ] Adicionar registros DNS no HostGator (SPF, DKIM, DMARC) conforme o Resend instruir
 - [ ] Aguardar verificação (pode levar até 48h)
-- [ ] Atualizar `from` em `app/api/contact/route.ts`:
-  ```
-  from: "Investe Tecnologia <site@investetecnologia.com.br>"
-  ```
+- [ ] Atualizar `from` em `app/api/contact/route.ts` para `site@investetecnologia.com.br`
 - [ ] Atualizar `CONTACT_EMAIL` nas env vars do Vercel para `comercial@investetecnologia.com.br`
 
 ---
@@ -55,23 +54,14 @@ Após verificar o domínio, atualizar em: vercel.com → projeto → Settings �
 
 ---
 
-## Vercel — domínio customizado
-
-- [ ] vercel.com → projeto → Settings → Domains → Add Domain → `investetecnologia.com.br`
-- [ ] Adicionar registro no HostGator (CNAME ou A) conforme o Vercel instruir
-- [ ] Aguardar propagação DNS (pode levar até 24h)
-- [ ] Verificar HTTPS automático ativo
-
----
-
 ## Identidade visual — aplicar no site
 
 - [ ] Substituir placeholder "IT" (logo-box dourado) pela logo real em SVG ou PNG com fundo transparente
-  - Arquivos disponíveis em `~/Personal/Investe Tecnologia/`: `logo-investe-tecnologia-texto-ao-lado-cores-originais.png`, `logo-investe-tecnologia-texto-abaixo-cores-originais.png`, `logo-investe-tecnologia-texto-ao-lado-branco.png`
-- [ ] Revisar paleta de cores do site contra a identidade visual real (verificar se dourado `#c9a227` bate com o da marca)
+  - Arquivos em `~/Personal/Investe Tecnologia/`: `logo-investe-tecnologia-texto-ao-lado-cores-originais.png`, etc.
+- [ ] Revisar paleta de cores do site (verificar se dourado `#c9a227` bate com a marca)
 - [ ] Aplicar tipografia oficial da marca (se diferente de Bricolage Grotesque)
-- [ ] Adicionar favicon real (atualmente usa o padrão do Next.js)
-- [ ] Adicionar logo no footer substituindo o "IT" por imagem real
+- [ ] Adicionar favicon real (atualmente usa padrão Next.js)
+- [ ] Adicionar logo no footer substituindo "IT" por imagem real
 - [ ] Verificar versão branca da logo para uso no header (fundo escuro)
 
 ---
@@ -80,7 +70,12 @@ Após verificar o domínio, atualizar em: vercel.com → projeto → Settings �
 
 - [ ] Substituir depoimentos fictícios por reais (ou remover a seção)
 - [ ] Atualizar cases com detalhes reais dos clientes (com autorização)
-- [ ] Adicionar logo real nas versões PNG (substituir placeholder "IT")
-- [ ] Revisar vagas abertas em `/carreiras` — remover ou atualizar conforme realidade
+- [ ] Revisar vagas abertas em `/carreiras` — remover ou atualizar
 - [ ] Adicionar parceiros reais em `/parceiros`
 - [ ] Revisar texto "5+ anos no mercado" em `/sobre`
+
+---
+
+## Manutenção
+
+- [ ] Rodar validação estática de scripts (bash/node) — sem executar integrações externas

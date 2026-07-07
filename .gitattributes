@@ -1,0 +1,10 @@
+# LF em tudo (repo multi-OS; convenção do workspace taproot, anti-churn CRLF)
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+# Binários
+*.png binary
+*.jpg binary
+*.ico binary
+*.woff2 binary
