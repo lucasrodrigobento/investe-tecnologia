@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "name": "investe-tecnologia",
+  "slug": "investe-tecnologia",
+  "version": "1.0.0",
+  "description": "Descrição do projeto investe-tecnologia",
+  "type": "web-application",
+  "status": "active",
+  "created": "2026-06-29",
+  "updated": "2026-06-29",
+  "owner": {
+    "name": "Lucas Bento",
+    "email": "lucasengenhariacomp@gmail.com"
+  },
+  "tech_stack": {
+    "backend": [],
+    "frontend": [],
+    "database": [],
+    "infrastructure": []
+  },
+  "repositories": {
+    "main": "git@github.com:lucasrodrigobento/investe-tecnologia.git",
+    "knowledge_base": "/home/lucasbento/taproot/projects/investe-tecnologia"
+  },
+  "documentation": {
+    "readme": "README.md",
+    "memory": "MEMORY.md",
+    "architecture": "docs/architecture/",
+    "api": "docs/api/",
+    "guides": "docs/guides/"
+  },
+  "maturity": {
+    "score": null,
+    "last_evaluated": null,
+    "baseline": "9.5"
+  },
+  "tags": []
+}
