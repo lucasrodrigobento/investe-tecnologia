@@ -6,7 +6,7 @@ version: 1.0.0
 created: 2026-06-18
 updated: 2026-06-18
 author: Claude Sonnet 4.6
-tokens: ~180
+tokens: ~256
 status: active
 ---
 
